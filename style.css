@@ -1,0 +1,37 @@
+body {
+  margin: 0;
+  padding: 20px;
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+  text-align: center;
+}
+
+.title {
+  margin-bottom: 30px;
+  font-size: 24px;
+  color: #333;
+}
+
+.image-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* 3 columns */
+  gap: 15px;
+  max-width: 600px;
+  margin: auto;
+}
+
+.image-container {
+  overflow: hidden;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+.image-container img {
+  width: 100%;
+  height: auto;
+  transition: transform 0.4s ease;
+}
+
+.image-container img:hover {
+  transform: scale(1.1); /* Zoom effect */
+}
